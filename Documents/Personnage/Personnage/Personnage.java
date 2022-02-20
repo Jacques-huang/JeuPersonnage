@@ -15,7 +15,11 @@ public class Personnage {
    	 public boolean degats(int degats){
 		 this.vie = this.vie - degats;
 		 return vie>0;
-    }
+    	}
+	public int degat(int degat){
+		this.vie = this.vie - degat;
+		return this.vie
+	}
 
 	private String nom;
 	private int vie;
