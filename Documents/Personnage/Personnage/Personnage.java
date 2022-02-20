@@ -12,9 +12,10 @@ public class Personnage {
 	public void PlusDeVie(int soin){
 		this.vie = this.vie + soin;
 	}
-	public void degats(int degats){
-		this.vie = this.vie - degats;
-	}
+   	 public boolean degats(int degats){
+		 this.vie = this.vie - degats;
+		 return vie>0;
+    }
 
 	private String nom;
 	private int vie;
